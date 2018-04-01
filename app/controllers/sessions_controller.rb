@@ -1,8 +1,5 @@
 class SessionsController < ApplicationController
   def new
-  	if session[:user_id]
-  		redirect_to posts_path
-  	end
   end
 
   def create
