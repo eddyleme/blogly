@@ -1,0 +1,16 @@
+<h1>Welcome to Blogly</h1>
+<h2>Log in</h2>
+<%= form_tag sessions_path do %>
+<p>
+<%= label_tag :username %>
+<%= text_field_tag :username %>
+</p> <p>
+<%= label_tag :password %>
+<%= password_field_tag :password %> </p>
+<p>
+<%= submit_tag 'Log in' %>
+</p>
+<p>
+New to Blogly? <%= link_to "'Click Here'", new_users_path %>
+</p>
+<% end %>
