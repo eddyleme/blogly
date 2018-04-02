@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
   end
 
   def show
-  	redirect_to '/'
+  	redirect_to root_path
   end
 
   def create
@@ -35,6 +35,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out
-    redirect_to '/'
+    redirect_to root_path
   end
 end

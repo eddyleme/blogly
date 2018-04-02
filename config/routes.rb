@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
-  root 'sessions#new', as: '/'
+  root 'sessions#new'
   resource :sessions
 	resource :users
   get 'users/new'

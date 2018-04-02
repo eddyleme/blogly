@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   	@user = User.new
   end
 
+  def show
+  	redirect_to posts_path
+  end
+
   def create
 		@user = User.new user_params
 		# if @user.save
@@ -13,7 +17,7 @@ class UsersController < ApplicationController
 		return render action: 'new' unless @user.save
 			# redirect_to root_path
 			session[:user_id] = @user.id
-			redirect_to posts_path, notice: 'User was successfully created.'
+			redirect_to posts_path, notice: 'Welcome to Blogly!'
 	end
 
 	private
