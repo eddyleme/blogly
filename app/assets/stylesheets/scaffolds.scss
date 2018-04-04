@@ -27,8 +27,11 @@ pre {
 }
 
 a {
-  color: blue;
+  color: white;
   text-decoration-line: none;
+}
+a:hover {
+  color: blue;
 }
 
 th {
